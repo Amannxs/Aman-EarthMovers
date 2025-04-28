@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <span class="menu-icon" onclick="toggleSidebar()">&#9776;</span>
+       
+  
+        <div id="sidebar" class="sidebar" style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px);">
+        <span class="close-btn" onclick="closeSidebar()">×</span>
+        <a href="index.html">Home</a>
+        <a href="booking.html">Book Now</a>
+        <a href="https://wa.me/9175604040?text=Hello%20I%20am%20interested%20in%20your%20services">Contact</a>
+        <a href="https://www.facebook.com/share/1BmToHH2dt/">Facebook</a>
+        <a href="https://www.instagram.com/amann_xs/?next=https%3A%2F%2Fwww.instagram.com%2Famann_xs%2F">Instagram</a>
+    </div>
+    </header>
+    <div class="booking-container fade-in">
+        <h2>Book Your Machine</h2>
+        <input type="text" id="bookingName" placeholder="Your Name">
+        <input type="text" id="bookingContact" placeholder="Your Contact">
+        <input type="text" id="bookingAddress" placeholder="Your Address">
+        <input type="date" id="bookingDate">
+        <select id="machineType">
+            <option value="">Select Machine</option>
+            <option value="Backhoe Loader">Backhoe Loader -₹1100</option>
+            <option value="Bulldozer">Bulldozer -₹2000</option>
+            <option value="Concrete Mixer">Concrete Mixer -₹500</option>
+            <option value="Crane">Crane -₹1500</option>
+            <option value="Dump Truck">Dump Truck -₹900</option>
+            <option value="Excavator">Excavator -₹1800</option>
+            <option value="Pile Driver">Pile Driver -₹2500</option>
+            <option value="Road Roller">Road Roller -₹1000</option>
+            
+        </select>
+        <button onclick="submitBooking()">Confirm Booking</button>
+    </div><br><br><br><br><br>
+     <footer>
+            <p>&copy; 2025 Aman Shaikh. All rights reserved.</p>
+        </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

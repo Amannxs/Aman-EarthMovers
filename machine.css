@@ -1,0 +1,248 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Body */
+  body {
+    background-color: #fffbe6;
+    padding: 20px;
+  }
+  .page-title {
+    text-align: center;
+    font-size: 40px;
+    color: #FFD700;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 1s ease;
+  }
+.sidebar.active {
+    left: 0;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background:none;
+    color:black;
+    border-radius: 5px;
+    z-index: 999;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.811);
+    backdrop-filter: blur(5px);
+    color: white;
+    padding-top: 50px;
+    transition: 0.3s;
+    z-index: 999;
+    text-align: center;
+}
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+.sidebar a:hover {
+    background: #ff9800;
+}
+
+.close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    cursor:pointer;
+}
+
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .page-title {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+  }
+  /* Container */
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 7px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  /* Machine Card Layout */
+  .machine-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Machine Image */
+  .machine-image{
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+
+  }
+  .machine-image img {
+    width: 100%;
+    height:auto;
+    object-fit: cover;
+    border-left:5px solid #00000075;
+    border-top:5px solid #00000075;
+    border-bottom:5px solid #00000075;
+    animation: fadeInDown 1s ease;
+    display: block;
+    border-radius: 7px;
+  }
+  
+  /* Details */
+  .machine-details {
+    padding: 20px;
+    background-color: #fff;
+    animation: fadeInDown 1s ease;
+    
+    }
+    
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @media (max-width: 767px) {
+      .page-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+    }
+
+  
+  .machine-details h2 {
+    color: #FFD700;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .machine-details p {
+    font-size: 17px;
+    color: #333;
+    margin: 8px 0;
+  }
+  
+  /* Contractor Info */
+  .contractor-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .contractor-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #FFD700;
+  }
+  
+  .contractor-info p {
+    margin: 2px 0;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Responsive */
+  @media (min-width: 768px) {
+    .machine-card {
+      flex-direction: row;
+    }
+  
+    .machine-image {
+      flex: 1.2;
+    }
+  
+    .machine-details {
+      flex: 1;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .machine-details h2 {
+      font-size: 24px;
+    }
+  
+    .machine-details p {
+      font-size: 16px;
+    }
+  
+    .contractor-info {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    footer {
+      font-size: 10px;
+    }
+    .menu-icon {
+      font-size: 15px;
+    }
+    .sidebar {
+      width: 50%;
+      font-size: 8px;
+    }
+    .contractor-info img {
+      margin-bottom: 10px;
+    }
+    .container p{
+      font-size: 10px;
+    }
+  }
+ 
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
